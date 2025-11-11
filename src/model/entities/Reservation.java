@@ -3,10 +3,8 @@ package model.entities;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.SimpleFormatter;
 
-
-public class Reservarion {
+public class Reservation {
 
     private Integer roonumber;
     private Date checkIn;
@@ -15,7 +13,7 @@ public class Reservarion {
     private static SimpleDateFormat sdf = new SimpleDateFormat ("dd/MM/yyyy");
 
 
-    public Reservarion(Integer roonumber, Date checkIn, Date checkOut) {
+    public Reservation(Integer roonumber, Date checkIn, Date checkOut) {
         this.roonumber = roonumber;
         this.checkIn = checkIn;
         this.checkOut = checkOut;
